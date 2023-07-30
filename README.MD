@@ -50,15 +50,15 @@ The Soil Farming Agent project is a web-based platform developed using Node.js, 
 
 ## 📩 Documentation
 
-[High Level Document](https://github.com/Tanmay-vats-sharma/Soil_Farming_Agent/Documentation/High_Level_Document.pdf)
+[High Level Document](Documentation/High_Level_Document.pdf)
 
-[Low Level Document](https://github.com/Tanmay-vats-sharma/Soil_Farming_Agent/Documentation/Low_Level_Document.pdf)
+[Low Level Document](Documentation/Low_Level_Document.pdf)
 
-[Architecture](https://github.com/Tanmay-vats-sharma/Soil_Farming_Agent/Documentation/Architecture.pdf)
+[Architecture](Documentation/Architecture.pdf)
 
-[WireFrame](https://github.com/Tanmay-vats-sharma/Soil_Farming_Agent/Documentation/Wireframe.pdf)
+[WireFrame](Documentation/Wireframe.pdf)
 
-[Report](https://github.com/Tanmay-vats-sharma/Soil_Farming_Agent/Documentation/Project_Report.pdf)
+[Report](Documentation/Project_Report.pdf)
 
 ## Authors
 #### Naman Malik
