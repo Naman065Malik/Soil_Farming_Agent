@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Farmin Agent | Admin page</title>
+    <link rel="stylesheet" href="/static/css/admin/form.css">
+</head>
+<body>
+    <div class="title">
+        <div class="tlogo">
+            <img src="/static/images/img/OIG.jpg" alt="">
+        </div>
+        
+        <div class="profile_pic">
+            <img src="/{{user.profilePhoto}}" alt="">
+        </div>
+    </div>
+    <div class="form">
+        <div class="head">
+            <h1>Add soil</h1>
+            <div class="back_button">
+                <a href="/admin/admin_soil/"><button>Back</button></a>
+               </div>
+        </div>
+        <form class="input_details" action="/api/soil" method="post" enctype='multipart/form-data'>
+              <div class="input1">
+                <label for="name" class="label">Soil's Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Soil's name">
+
+                <label for="photo"  class="label" id="upload">Upload image:</label>
+                <input type="file" name="soil" accept="image/jpeg, image/jpg, image/png" id="photo">
+
+                <img src="/static/images/img/more.png" alt="soil's_image" id="soil_image">
+
+                <label for="description" class="label">Discription:</label>
+                <textarea name="description" id="description" cols="30" rows="4" maxlength="252"  class="textarea">Enter Soil's Discription</textarea>
+
+                <button type="submit" id="submit">Submit</button>
+              </div>
+              <div class="input2">
+                <label for="address" class="label">Places:</label>
+                <textarea name="places" id="address" cols="30" rows="4" maxlength="181" class="textarea">Enter places where this soil found</textarea>
+
+                <label for="soil" class="label">Crops:</label>
+                <textarea name="cropes" id="soil" cols="30" rows="4" maxlength="232" class="textarea">Enter Crops grown on this soil</textarea>
+
+                <label for="range" class="label">Nature:</label>
+                <textarea name="nature" id="range" cols="30" rows="4" maxlength="221" class="textarea">Enter Nature of soil</textarea>
+              </div>
+        </form>
+    </div>
+</body>
+</html>

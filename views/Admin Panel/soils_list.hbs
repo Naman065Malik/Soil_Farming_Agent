@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Farming Agent | Admin Page</title>
+    <link rel="stylesheet" href="/static/css/admin/list.css">
+</head>
+<body>
+    <div class="title">
+        <div class="tlogo">
+            <img src="/static/images/img/OIG.jpg" alt="">
+        </div>
+        
+        <div class="profile_pic">
+            <img src="/{{user.profilePhoto}}" alt="">
+        </div>
+    </div>
+   <div class="soils">
+    <div class="head">
+        <h1>Soils</h1>
+        <div class="back_button">
+            <a href="/admin/admin_soil/"><button>Back</button></a>
+           </div>
+    </div>
+    
+    <div class="container">
+        {{#each soils}}
+        <div class="cards">
+            <div class="soil_image">
+                 <img src="/{{image}}" alt="">
+            </div>
+            <div class="soil_name">
+                 <h1>{{name}}</h1>
+            </div>
+            <div class="des">
+                 <p>{{shorten description 25}}</p>
+                 <a href="/admin/soil_list/{{_id}}"><button>Read More...</button></a>
+                 {{!-- <a href="/admin/{{name}}"><button>Read More...</button></a> --}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+   </div>
+    
+</body>
+</html>

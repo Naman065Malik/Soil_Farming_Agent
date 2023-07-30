@@ -1,0 +1,202 @@
+html {
+    background-image: url(/static/images/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 20%;
+    align-items: center;
+}
+.tlogo img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+.profile_pic img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    /* height: 120vh; */
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.3);
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navigation{
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+.navigation a:hover,.navigation a.active{
+    color: blue;
+}
+
+.soil_detils{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 79%;
+    /* height: 120vh; */
+}
+.soil_all_details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 100%; */
+}
+.soil_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+    height: 540px;
+    /* margin-top: -35px; */
+    margin-left: 5px;
+    }
+
+
+.slider img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.description h1{
+    font-size: 45px;
+    margin-bottom: -10px;
+    color: blanchedalmond;
+    margin-top: 0px;
+}
+.description p{
+    font-size: 17px;
+    color: white;
+    
+}
+
+
+.back_button button{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:palevioletred;
+    border: 1px solid black;
+    color: white;
+    margin-top: -10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.back_button button:hover{
+    text-align: center;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+ @media (max-width:950px){
+        .main{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1%;
+            height: auto;
+        }
+    
+        .navbar{
+            background: rgba(0, 0, 0, 0.3);
+            width: 100%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .navigation{
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        
+        .soil_detils{
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            width: 100%;
+            height: auto;
+            margin-top: 1%;
+        }
+        
+    }
+
+@media (max-width:620px){
+    .soil_all_details{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    .soil_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height:auto;
+        /* margin-top: 20%; */
+       
+        margin-left: 5px;
+        }
+}    
+
+@media (max-width:432px){
+    .slider img{
+        width: 90%;
+        height: 1%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .description h1{
+        font-size: 35px;
+        margin-bottom: 1px;
+        color: blanchedalmond;
+        margin-top: 0px;
+    }
+    .description p{
+        font-size: 17px;
+        color: white;
+        /* margin-top: -5px; */
+    }
+
+    .navigation a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil_Farming_Agent | Login</title>
+    <link rel="stylesheet" href="/static/css/register/register_login.css">
+</head>
+
+<body>
+    <div class="register">
+        <div class="nav">
+            <div class="logo">
+                <img src="/static/images/img/OIG.jpg" alt="logo">
+            </div>
+            
+        </div>
+    
+        <div class="login">
+           <div class="log_query">
+            <p ><b>Do you have an account?</b></p>
+           </div>
+           <div class="statement">
+            <p><b>Login</b></p>
+           </div>
+            
+            
+            <form action="" id="login_form">
+                <div class="log_details">
+                    <input type="text" placeholder="USERID" id="username" name="username">
+                </div>
+                <div class="log_details">
+                    <input type="text" placeholder="PASSWORD" id="password">
+                </div>
+    
+            </form>
+        </div>
+        <div class="log_btn">
+            <button onclick="login()"><b>Login</b></button>
+        </div>
+        <div class="register_query">
+            <p><b>Don't have any account??</b></p>
+            <a href="register.html"><b>REGISTER HERE</b></a>
+        </div>
+    </div>
+    
+    
+    <script>
+          
+        function login(){
+            let UserID = document.getElementById("username").value;
+            let Password = document.getElementById("password").value;
+
+            fetch("http://localhost:8000/api/login",{
+                method: "POST",
+                body: JSON.stringify({
+                    userID: UserID,
+                    password: Password
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            }).then(response => response.json())
+                .then(response => {
+                    console.log(JSON.stringify(response))
+                    if(response.redirect){
+                        window.location.href = response.redirect;
+                    }
+                    if(response.message){
+                        alert(response.message)
+                    }
+
+                })
+                    
+          }
+          
+
+    </script>
+
+</body>
+
+</html>

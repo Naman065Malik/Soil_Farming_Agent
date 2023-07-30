@@ -62,11 +62,11 @@ The Soil Farming Agent project is a web-based platform developed using Node.js, 
 
 ## Authors
 #### Naman Malik
-- **Skills:** JavaScript, Node.js, Express.js, MongoDB, HTML, CSS
+- **Skills:** JavaScript, Node.js, Express.js, MongoDB
 - **Social Media:** [LinkedIn](https://www.linkedin.com/in/namanmalik18), [GitHub](https://github.com/Naman065Malik)
 
 #### Tanmay Sharma
-- **Skills:** Node.js, Express.js, MongoDB, React, Redux
+- **Skills:** HTML, CSS, JavaScript
 - **Social Media:** [LinkedIn](https://www.linkedin.com/in/tanmay-sharma2903), [GitHub](https://github.com/Tanmay-vats-sharma)
 
 > Feel free to add more authors and update their information as needed. The README file provides essential information about the project, its features, installation instructions, technologies used, and how to contribute, making it easier for users and contributors to understand and engage with your project repository.

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Farmin Agent | Admin page</title>
+    <link rel="stylesheet" href="/static/css/admin/form.css">
+</head>
+<body>
+    <div class="title">
+        <div class="tlogo">
+            <img src="/static/images/img/OIG.jpg" alt="">
+        </div>
+        
+        <div class="profile_pic">
+            <img src="/{{user.profilePhoto}}" alt="">
+        </div>
+    </div>
+    <div class="form">
+        <div class="head">
+            <h1>Add Distributor</h1>
+            <div class="back_button">
+                <a href="/admin/admin_distributors/"><button>Back</button></a>
+               </div>
+        </div>
+        <form class="input_details" method="post" action="/api/distributor" enctype='multipart/form-data'>
+              <div class="input1">
+                <label for="name" class="label">Distributor's Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Distributor's name">
+
+                <label for="photo"  class="label" id="upload">Upload image:</label>
+                <input type="file" name="Distributor" accept="image/jpeg, image/jpg, image/png" id="photo">
+
+                <img src="/static/images/img/more.png" alt="distributor's_image" id="image">
+
+                <label for="description" class="label">Discription:</label>
+                <textarea name="description" id="description" cols="30" rows="4" maxlength="252"  class="textarea">Enter Distributor's Discription</textarea>
+
+                <button type="submit" id="submit">Submit</button>
+              </div>
+              <div class="input2">
+                <label for="address" class="label">Address:</label>
+                <textarea name="address" id="address" cols="30" rows="4" maxlength="181" class="textarea">Enter Distributor's Address</textarea>
+
+                <label for="soil" class="label">Soils:</label>
+                <textarea name="soils" id="soil" cols="30" rows="4" maxlength="232" class="textarea">Enter Soils Distributor sell</textarea>
+
+                <label for="range" class="label">Dilevery Range:</label>
+                <textarea name="range" id="range" cols="30" rows="4" maxlength="221" class="textarea">Enter Dilevery Range of Distributor</textarea>
+              </div>
+        </form>
+    </div>
+</body>
+</html>

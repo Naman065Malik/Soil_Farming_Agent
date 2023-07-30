@@ -1,0 +1,226 @@
+html {
+    background-image: url(/static/images/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 20%;
+    align-items: center;
+    border: 2px solid palegreen;
+}
+
+.tlogo img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.profile_pic img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.admin_panel{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    height: auto;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.3);
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid palegreen;
+}
+.navigation{
+    margin-top: 40%;
+    margin-bottom: 10%;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+.navigation a:hover,.navigation a.active{
+    color:palegreen;
+}
+.content{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: 2px solid palegreen;
+    
+    width: 79%;
+    
+}
+
+.content h1{
+    font-size: 2rem;
+    color:palegreen;
+    
+}
+
+.main{
+    
+    
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+   
+    
+
+}
+
+.box{
+    height: 220px;
+    width: 220px;
+    border: 2px solid palegreen;
+    border-radius: 70px;
+    
+    
+}
+
+#distributors{
+    background: url(/static/images/img/distributors.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#distributors label h1{
+      
+      font-size: 1.5rem;
+      margin-top: 215%;
+      text-align: center;
+      position: relative;
+
+      
+}
+
+
+#users{
+    background: url(/static/images/img/more.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: paleturquoise;
+    
+}
+#soils{
+    background: url(/static/images/img/soil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+#users label h1{
+    font-size: 2rem;
+      margin-top: 270%;
+      text-align: center;
+      position: relative;
+}
+#soils label h1{
+    font-size: 2rem;
+      margin-top: 500%;
+      text-align: center;
+      position: relative;
+}
+
+#add_distributors{
+    background: url(/static/images/img/more.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: paleturquoise;
+}
+
+#add_distributors label h1{
+    font-size: 1.5rem;
+      margin-top: 152%;
+      text-align: center;
+      position: relative;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width:958px){
+    .admin_panel{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        margin-top: 1%;
+        height: 120vh;
+
+    }
+    .box{
+        margin-top: 40px;
+        height: 170px;
+        width: 170px;
+        border-radius: 20px;
+        margin-top: 80px;
+    }
+    .main{
+        
+        flex-direction: column;
+        justify-content: space-between;
+        /* margin-top: -30%; */
+        
+    }
+    .first{
+        margin-top: 0px;
+    }
+    
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .navigation{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .navigation a{
+        font-size: 1.2rem;
+    }
+}

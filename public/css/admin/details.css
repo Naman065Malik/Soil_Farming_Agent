@@ -1,0 +1,119 @@
+html {
+    background-image: url(/static/images/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 20%;
+    align-items: center;
+}
+
+.tlogo img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.profile_pic img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.soil_detils{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 1%;
+    
+}
+.soil_all_details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+.soil_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+    height: 540px;
+    /* margin-top: -35px; */
+    margin-left: 5px;
+    }
+
+
+.slider img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.description h1{
+    font-size: 45px;
+    margin-bottom: -5px;
+    color: blanchedalmond;
+    margin-top: 0px;
+}
+.description p{
+    font-size: 17px;
+    color: white;
+    
+}
+
+
+.back_button button{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:palevioletred;
+    border: 1px solid black;
+    color: white;
+    margin-top: -10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.back_button button:hover{
+    text-align: center;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media (max-width:632px){
+    .soil_all_details{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 200%;
+    }
+    .soil_info{
+        width: 70%;
+        height: auto;
+        align-self: center;
+        text-align: center;
+    }
+    .slider img{
+        width: 85%;
+        /* height: 70%; */
+        
+    }
+}
