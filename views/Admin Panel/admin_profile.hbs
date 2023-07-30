@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Farming Agent | Admin Page | Profile</title>
+    <link rel="stylesheet" href="/static/css/admin/admin_profile.css">
+
+</head>
+
+<body>
+    <div class="home">
+        <div class="title">
+            <div class="tlogo">
+                <img src="/static/images/img/OIG.jpg" alt="">
+            </div>
+
+            <div class="profile_pic">
+                <img src="/{{user.profilePhoto}}" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="navbar">
+                <div class="navigation"><a href="/admin/admin_distributors/"><b>Distributors</b></a></div>
+                <div class="navigation"><a href="/admin/admin_soil/"><b>Soils</b></a></div>
+                <div class="navigation"><a href="/admin/admin_profile" class="active"><b>Profile</b></a></div>
+                
+            </div>
+
+            <div class="profile">
+                <form class="profile_info" id="profile_info" method="post" action="/api/profile" enctype='multipart/form-data'>
+                    <div class="account_details">
+                        <h1 id="UserID">UserID: {{user.userID}}</h1>
+
+                        <h1 id="Email">Email: {{user.email}}</h1>
+
+                        <h1 id="Age">Age: {{user.age}}</h1>
+
+                        <h1 id="Password">Password: {{user.password}}</h1>
+
+                        <button id="btn" type="button" onclick="edit_profile()">EDIT PROFILE</button>
+
+                    </div>
+                    <div class="account_details">
+                        <div class="profile_img">
+                            <img src="/{{user.profilePhoto}}" alt="">
+                        </div>
+                        <div class="name">
+                            <h1 id="name">{{user.name}}</h1>
+                        </div>
+
+                    </div>
+                    <div class="account_details non-visible"> 
+                        
+                            <h1 id="user_id">UserID : {{user.userID}}</h1>
+                        <label>Email : </label>
+                            <input id="email" name="email" placeholder="Enter your Email"> 
+                        <label>Age : </label>
+                            <input id="age" name="age" placeholder="Enter your Age">
+                        <label >Password : </label>
+                            <input id="password" name="password" placeholder="Enter your Password">
+                        
+                        <div class="buttons"> 
+                            <div class="sub_can">
+                                <button id="submit" type="submit" onclick ="submit()">SUBMIT</button>
+                            </div> 
+                            <div class="sub_can"> 
+                                <button id="cancel" type="button" onclick="edit_profile()">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="account_detail non-visible">
+                        <div class="update_image">
+                            <label for="profile_photo">Change Image</label>
+                                <input type="file" name="profilePhoto" accept="image/jpeg, image/jpg, image/png" id="profile_photo" >
+                        </div>
+                        <div class="profile_img">
+                            <img src="/{{user.profilePhoto}}" alt="">
+                        </div> 
+                        <div class="name">
+                            <label>Name:</label> 
+                                <input  type="text" name="name" placeholder="Enter your name" id="user_name"> 
+                        </div>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+
+
+       
+
+    </div>
+    <script>
+        
+        function edit_profile(profile_info){
+
+            const elements = document.querySelectorAll(".account_details")
+            const element = document.querySelector(".account_detail")
+            element.classList.toggle("non-visible");
+            console.log(elements)
+            elements.forEach(element =>{
+                element.classList.toggle("non-visible");
+            })
+
+            console.log("Triigerred edit_profile")
+        }
+
+        
+
+        function submit() {
+            let name = document.getElementById('name').value
+            // let userid = document.getElementById('userid').value
+            let password = document.getElementById('password').value
+            let email = document.getElementById('email').value
+            let age = document.getElementById('age').value
+
+            alert( name + ' ' + password + '' + '' + email + "" + age)
+
+            console.log("kcb")
+
+
+        }</script>
+</body>
+
+</html>

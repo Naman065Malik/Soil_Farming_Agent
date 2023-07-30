@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil_Farming_Agent | Register</title>
+    <link rel="stylesheet" href="/static/css/register/register_login.css">
+</head>
+
+<body>
+    <div class="register">
+
+        <div class="nav">
+            <div class="logo">
+                <img src="/static/images/img/OIG.jpg" alt="logo">
+            </div>
+        </div>
+
+        <div id="title">
+            Soil Farming Agent
+        </div>
+        <br>
+        <form action="">
+            <div class="register_details">
+                <label for="name">Full Name:</label>
+                <input type="text" placeholder="Enter your name" name="name" id="name"><br>
+            </div>
+            <br>
+            <div class="register_details">
+                <label for="id">UserID:</label>
+                <input type="text" name="id" placeholder="Enter your UserID" id="id"><br>
+            </div>
+            <br>
+            <div class="register_details">
+                <label for="email">Email:</label>
+                <input type="text" name="email" placeholder="Enter your Email" id="email"><br>
+            </div>
+            <br>
+            <div class="register_details">
+                <label for="pass">Password:</label>
+                <input type="text" name="pass" placeholder="Enter your Password" id="pass"><br>
+            </div>
+            <br>
+            <div class="register_btn">
+                <input type="button" value="Submit" onclick="save_data()"> <input type="reset" value="Reset">
+            </div>
+
+
+        </form>
+
+        <div class="register_query">
+            <p><b>Already have an account?</b></p>
+            <a href="/login/"><b>LOGIN HERE</b></a>
+        </div>
+
+    </div>
+    <script>
+          
+          function save_data(){
+            let Name = document.getElementById("name").value;
+            let UserID = document.getElementById("id").value;
+            let Email = document.getElementById("email").value;
+            let Password = document.getElementById("pass").value;
+
+            fetch("http://localhost:8000/api/register",{
+                method: "POST",
+                body: JSON.stringify({
+                    name: Name,
+                    userID: UserID,
+                    email: Email,
+                    password: Password
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            }).then(response => response.json())
+                .then(response => {
+                    if(response.redirect){
+                        window.location.href = response.redirect;
+                    }
+                    alert(response.message)
+                })
+                    
+          }
+          
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil_Farming_Agent|Home|Soil Details</title>
+    <link rel="stylesheet" href="/static/css/user/soil.css">
+</head>
+<body>
+    
+    <div class="home">
+        <div class="title">
+            <div class="tlogo">
+                <img src="/static/images/img/OIG.jpg" alt="">
+            </div>
+            
+            <div class="profile_pic">
+                <img src="/{{user.profilePhoto}}" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="navbar">
+                <div class="navigation"><a href="/"class="active"><b>Home</b></a></div>
+                <div class="navigation"><a href="/distributors"><b>Distributors</b></a></div>
+                <div class="navigation"><a href="/profile"><b>Profile</b></a></div>
+                <div class="navigation"> <a href="/about" ><b>About us</b></a></div>
+            </div>
+            <div class="soil_detils">
+                <div class="soil_all_details">
+                    <div class="soil_info">
+                        <div class="description">
+                            <h1>{{soil.name}}</h1>
+                        </div>
+                        
+                    
+                            <div class="slider">
+                                <img  id="img-1" src="/{{soil.image}}" alt="">
+                                
+                            </div>
+                            
+                     
+                        <div class="description">
+                            <h1>description</h1>
+                            <p>{{soil.description}}</p>
+                        </div>
+                  </div>
+                     
+                   
+                   <div class="soil_info">
+                    <div class="description">
+                      <h1>places</h1>
+                      <p>{{soil.places}}</p>
+                    </div>
+                    <div class="description">
+                        <h1>Crops</h1>
+                        <p>{{soil.cropes}}</p>
+                    </div>
+                    <div class="description">
+                        <h1>Nature</h1>
+                        <p>{{soil.nature}}</p>
+                    </div>
+                    <div class="back_button">
+                        <a href="/"><button>Back</button></a>
+                       </div>
+                   </div>
+                   
+                </div>
+                  
+            </div>
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Farming Agent | Admin Page</title>
+    <link rel="stylesheet" href="/static/css/admin/details.css">
+</head>
+<body>
+    
+    <div class="title">
+            <div class="tlogo">
+                <img src="/static/images/img/OIG.jpg" alt="">
+            </div>
+            
+            <div class="profile_pic">
+                <img src="/{{user.profilePhoto}}" alt="">
+            </div>
+        </div>
+
+        <div class="main">
+            
+            <div class="soil_detils">
+                <div class="soil_detils">
+                    <div class="soil_all_details">
+                        <div class="soil_info">
+                            <div class="description">
+                                <h1>{{distributor.name}}</h1>
+                            </div>
+                            
+                            <div class="soil_images">
+                                <div class="slider">
+                                    <img  id="img-1" src="/{{distributor.image}}" alt="">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="description">
+                                <h1>description</h1>
+                                <p>{{distributor.description}}</p>
+                            </div>
+                          </div>
+                         
+                       
+                       <div class="soil_info">
+                        <div class="description">
+                          <h1>Address</h1>
+                          <p>{{distributor.address}}</p>
+                        </div>
+                        <div class="description">
+                            <h1>Soils</h1>
+                            <p>{{distributor.soils}}</p>
+                        </div>
+                        <div class="description">
+                            <h1>Dilevery Range</h1>
+                            <p>{{distributor.range}}</p>
+                        </div>
+                        <div class="back_button">
+                            <a href="/admin/distributors_list"><button>Back</button></a>
+                           </div>
+                       </div>
+                       </div>
+                       
+                    </div>
+                      
+                </div>
+                  
+            </div>
+        
+        
+</body>
+</html>

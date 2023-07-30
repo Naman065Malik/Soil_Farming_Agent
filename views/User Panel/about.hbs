@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil_Farming_Agent | About us </title>
+    <link rel="stylesheet" href="/static/css/user/about.css">
+</head>
+
+<body>
+    
+    <div class="title">
+        <div class="tlogo">
+            <img src="/static/images/img/OIG.jpg" alt="">
+        </div>
+            
+        <div class="profile_pic">
+            {{#if user}}
+            <img src="/{{user.profilePhoto}}" alt="">
+            {{else}}
+            <img src="/static/images/img/user.png" alt="">
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="navigation"><a href="/"><b>Home</b></a></div>
+            <div class="navigation"><a href="/distributors"><b>Distributors</b></a></div>
+            <div class="navigation"><a href="/profile"><b>Profile</b></a></div>
+            <div class="navigation"> <a href="/about" class="active"><b>About us</b></a></div>
+        </div>
+        <div class="about">
+            <div class="atitle">
+                <div class="alogo">
+                    <img src="/static/images/img/OIG.jpg" alt="">
+                </div>
+                <div id="title">
+                    Soil Farming Agent
+                </div>
+            </div>
+
+            <div class="discription">
+                <p>
+                    Welcome to Soil Farming Agent, your ultimate resource for comprehensive soil information,
+                    agricultural guidance, and trusted soil distributors. Our mission is to empower farmers,
+                    gardeners, and agricultural enthusiasts with valuable insights about different types of soil,
+                    suitable crops, and the distributors who supply these soils.
+                </p>
+                <p>
+                    At Soil Farming Agent, we understand that soil plays a crucial role in the success of any
+                    farming endeavor. By offering detailed soil profiles, cultivation recommendations, and listings
+                    of reliable soil distributors, we aim to streamline the process of finding the right soil for
+                    your specific needs.
+                </p>
+                <p>
+                    Our team of soil experts, agronomists, and experienced farmers have meticulously curated a vast
+                    database of soil data, ensuring that you have access to accurate and up-to-date information.
+                    Whether you're looking for loamy soil for vegetable gardens or sandy soil for landscaping
+                    projects, our platform provides comprehensive details about the different types of soil, along
+                    with guidance on which crops thrive in specific soil conditions.
+                </p>
+                <p>
+                    Join our growing community of soil enthusiasts and take your farming practices to new heights.
+                    We believe that by providing you with the knowledge and resources you need, including access to
+                    trusted soil distributors, you can cultivate healthier soils and achieve greater yields.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

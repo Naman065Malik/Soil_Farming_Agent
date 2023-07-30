@@ -1,0 +1,264 @@
+html {
+    background-image: url(/static/images/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 20%;
+    align-items: center;
+}
+
+.tlogo img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.profile_pic img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    height: auto;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.3);
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navigation{
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+.navigation a:hover,.navigation a.active{
+    color: blue;
+}
+
+.soil {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.head h1 {
+    font-size: 50px;
+    color: white;
+    margin: 0px;
+    padding-bottom: 3px;
+}
+
+.container {
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    display: grid;
+    overflow: auto;
+    grid-template-columns: .5fr .5fr;
+}
+
+.cards{
+    height: 340px;
+    width: 300px;
+    border: 1px solid white;
+    box-shadow: 0 3px 10px grey;
+    justify-self: center;
+    grid-row-gap: 5rem;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    background:darkkhaki;
+    border-radius: 30px;
+}
+
+.soil_image img{
+      width: 100%;
+      height: 150px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+}
+.soil_name{
+    text-align: center;
+}
+.des{
+    text-align: center;
+}
+.des button{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:palevioletred;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+.des button:hover{
+    text-align: center;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+.container::-webkit-scrollbar {
+    width: 20px;
+    background-clip: padding-box;
+    overflow: auto;
+}
+.container::-webkit-scrollbar-track {
+    background: darkkhaki;
+    border-radius: 20px;
+    
+}
+.container::-webkit-scrollbar-thumb {
+    background-color: palevioletred;
+    border-radius: 20px;
+}
+
+@media (max-width:950px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
+        height: auto;
+    }
+
+    .navbar{
+        background: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .navigation{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .soil {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        width: 100%;
+        margin-top: 1%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+}
+
+@media (max-width:676px){
+    .container {
+        width: 100%;
+        height: 450px;
+        border-radius: 20px;
+        display: grid;
+        overflow: auto;
+        grid-template-columns: 5fr ;
+    }
+}
+
+@media (max-width:372px){
+    .navigation a{
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        
+    }
+
+    .cards{
+        height: 280px;
+        width: 60%;
+        border: 1px solid white;
+        box-shadow: 0 3px 10px grey;
+        justify-self: center;
+        grid-row-gap: 5rem;
+        margin: 10px 10px;
+        box-sizing: border-box;
+        background:darkkhaki;
+        border-radius: 30px;
+    }
+    
+    .soil_image img{
+          width: 100%;
+          height: 126px;
+          border-top-right-radius: 30px;
+          border-top-left-radius: 30px;
+    }
+    .soil_name{
+        margin-top: -19px;
+        text-align: center;
+        font-size: 11px;
+    }
+    .des{
+        margin-top: -20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 11px;
+    }
+    .des button{
+        text-align: center;
+        padding: 2px;
+        border-radius: 5px;
+        background-color:palevioletred;
+        margin-bottom: 5px;
+        border: 1px solid black;
+        color: white;
+        cursor: pointer;
+    }
+    .des button:hover{
+        text-align: center;
+        padding: 4px;
+        border-radius: 6px;
+        background-color: blueviolet;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .head h1 {
+        font-size: 2rem;
+        color: white;
+        margin: 0px;
+        padding-bottom: 3px;
+    }
+}

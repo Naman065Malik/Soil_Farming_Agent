@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Farming Agent | Admin Page</title>
+    <link rel="stylesheet" href="/static/css/admin/details.css">
+</head>
+<body>
+    
+    <div class="title">
+            <div class="tlogo">
+                <img src="/static/images/img/OIG.jpg" alt="">
+            </div>
+            
+            <div class="profile_pic">
+                <img src="/{{user.profilePhoto}}" alt="">
+            </div>
+        </div>
+
+        <div class="main">
+            
+            <div class="soil_detils">
+                
+                <div class="soil_all_details">
+                    <div class="soil_info">
+                        <div class="description">
+                            <h1>{{soil.name}}</h1>
+                        </div>
+                        
+                    
+                            <div class="slider">
+                                <img  id="img-1" src="/{{soil.image}}" alt="">
+                                
+                            </div>
+                            
+                     
+                        <div class="description">
+                            <h1>description</h1>
+                            <p>{{soil.description}}</p>
+                        </div>
+                  </div>
+                     
+                   
+                   <div class="soil_info">
+                    <div class="description">
+                      <h1>places</h1>
+                      <p>{{soil.places}}</p>
+                    </div>
+                    <div class="description">
+                        <h1>Crops</h1>
+                        <p>{{soil.cropes}}</p>
+                    </div>
+                    <div class="description">
+                        <h1>Nature</h1>
+                        <p>{{soil.nature}}</p>
+                    </div>
+                    <div class="back_button">
+                        <a href="/admin/soils_list/"><button>Back</button></a>
+                       </div>
+                   </div>
+                   
+                </div>
+            </div>
+        
+        
+</body>
+</html>

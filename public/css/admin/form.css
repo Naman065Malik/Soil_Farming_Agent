@@ -1,0 +1,233 @@
+html {
+    background-image: url(/static/images/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 20%;
+    align-items: center;
+}
+
+.tlogo img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.profile_pic img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.form{
+    
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-top: 1%;
+    border-radius: 20px;
+    padding: 10px;
+    height: auto;
+}
+.head{
+    text-align: center;
+    font-size: 22px;
+    color: palegreen;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.head h1{
+    margin-left: 35%;
+}
+.head .back_button{
+    margin-left: 20%;
+}
+.back_button button{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:palevioletred;
+    border: 1px solid black;
+    color: white;
+    margin-top: -10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.back_button button:hover{
+    text-align: center;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.textarea{
+    resize: none;
+    background-color:rgba(0, 0, 0, 0.3);
+     border:2px solid palegreen;
+    border-radius: 20px; 
+    font-size: 18px;
+     text-align: center; 
+     outline: none;
+     color: azure;
+     
+}
+
+.label{
+    font-size: 40px;
+    color:palegreen;
+    
+}
+
+#image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 10px;
+    align-self: center;
+    padding: 2px 2px;
+    background-color: rgb(161, 161, 122);
+    
+}
+
+#soil_image{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 2px 2px ;
+    background-color: rgb(161, 161, 122);
+}
+
+.input_details{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -10px;
+
+}
+.input1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95vh;
+}
+.input2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95vh;
+}
+
+#name{
+    background-color:rgba(0, 0, 0, 0.3);
+     border:2px solid palegreen;
+    border-radius: 20px; 
+    font-size: 18px;
+     text-align: center; 
+     outline: none;
+     color: azure;
+     height: 30px;
+     width: 100%;
+}
+#photo{
+    visibility: hidden;
+    display: inline;
+    margin: -5px;
+    /* padding: -10px; */
+}
+
+#upload{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:palevioletred;
+    border: 1px solid black;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+#upload:hover{
+    text-align: center;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#submit{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:palevioletred;
+    border: 1px solid black;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 15px;   
+}
+#submit:hover{
+    text-align: center;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media (max-width:698px){
+    .input_details{
+        flex-direction: column-reverse;
+        
+    }
+    .input1{
+        margin-top: 3%;
+    }
+    #upload ,#submit{
+        width: 100px;
+        align-self: center;
+    }
+    .head h1{
+        font-size: 1.5rem;
+    }
+    .textarea{
+        font-size: 13px;
+    }
+    .label{
+        font-size: 1.5rem;
+    }
+    .head h1{
+        margin-left: 1%;
+    }
+    .head{
+        margin-bottom: 2%;
+    }
+    #soil_image{
+        width: 200px;
+        align-self: center;
+    }
+}

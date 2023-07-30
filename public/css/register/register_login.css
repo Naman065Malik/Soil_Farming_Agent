@@ -1,0 +1,198 @@
+html {
+    background-image: url(/static/images/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+
+
+.login {
+    padding-top: 35px;
+}
+
+.log_query {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+
+}
+
+.statement {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    margin: -27px;
+
+}
+
+.log_details {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.log_details input {
+    height: 50px;
+    width: 270px;
+    border: none;
+    outline: none;
+    background: rgba(225, 225, 225, 0.5);
+    text-align: center;
+    font-size: larger;
+    border-radius: 20px;
+
+}
+
+.log_details input:hover {
+    height: 55px;
+    width: 290px;
+    border: none;
+    outline: none;
+    background: rgba(225, 225, 225, 0.5);
+    text-align: center;
+    font-size: larger;
+    border-radius: 20px;
+
+}
+
+.log_btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.log_btn button {
+    height: 40px;
+    width: 240px;
+    border: none;
+    outline: none;
+
+    background: rgba(111, 84, 231, 0.8);
+    text-align: center;
+    font-size: larger;
+    border-radius: 20px;
+
+}
+
+.log_btn button:hover {
+    height: 40px;
+    width: 240px;
+    border: 0.5px solid black;
+    outline: none;
+
+    background: rgba(111, 84, 231, 0.9);
+    text-align: center;
+    font-size: larger;
+    border-radius: 20px;
+
+}
+
+.register_query {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    
+}
+
+.register_query a {
+    padding-top: 18px;
+    color: blue;
+}
+
+.register {
+
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: black;
+}
+
+.register_details {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.register_details input {
+    height: 30px;
+    width: 180px;
+    border: none;
+    outline: none;
+    background: rgba(225, 225, 225, 0.5);
+    text-align: center;
+    font-size: larger;
+    border-radius: 7px;
+
+}
+
+.register_details label {
+    font-size: 20px;
+    color: black;
+    margin-top: 7px;
+}
+
+.register_btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.register_btn input {
+    height: 40px;
+    width: 100px;
+    border: none;
+    outline: none;
+    margin-left: 18px;
+    background: rgba(111, 84, 231, 0.8);
+    text-align: center;
+    font-size: larger;
+    border-radius: 20px;
+
+}
+
+.register_btn input:hover {
+    
+    border: 0.5px solid black;
+    outline: none;
+    margin-left: 18px;
+    background: rgba(111, 84, 231, 0.9);
+    text-align: center;
+    font-size: larger;
+    border-radius: 20px;
+
+}

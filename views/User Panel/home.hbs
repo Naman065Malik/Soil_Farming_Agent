@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil_Farming_Agent | Home</title>
+    <link rel="stylesheet" href="/static/css/user/home.css">
+</head>
+<body>
+    
+    
+        <div class="title">
+            <div class="tlogo">
+                <img src="/static/images/img/OIG.jpg" alt="">
+            </div>
+            
+            <div class="profile_pic">
+                <img src="/{{user.profilePhoto}}" alt="">
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="navbar">
+                <div class="navigation"><a href="/"class="active"><b>Home</b></a></div>
+                <div class="navigation"><a href="/distributors"><b>Distributors</b></a></div>
+                <div class="navigation"><a href="/profile"><b>Profile</b></a></div>
+                <div class="navigation"> <a href="/about" ><b>About us</b></a></div>
+            </div>
+            <div class="soil">
+                <div class="head">
+                    <h1><b>Soils</b></h1>
+                </div>
+    
+                <div class="container">
+                    {{#each soils}}
+                    <div class="cards">
+                        <div class="soil_image">
+                             <img src="/{{image}}" alt="">
+                        </div>
+                        <div class="soil_name">
+                             <h1>{{name}}</h1>
+                        </div>
+                        <div class="des">
+                             <p>{{shorten description }}</p>
+                             <a href="/soil/{{_id}}"><button>Read More...</button></a>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
